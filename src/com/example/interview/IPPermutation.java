@@ -5,6 +5,7 @@ import java.util.regex.*;
 
 public class IPPermutation {
     public static void main(String[] args) {
+    	System.out.println("Enter a IP address:: ");
         Scanner in = new Scanner(System.in);
         String s = in.next();
         StringBuilder sb = new StringBuilder(s);

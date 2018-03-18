@@ -3,8 +3,7 @@ package com.example.interview;
 public class RevFibonacci {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
+
 		int febCount = 7;
         int[] feb = new int[febCount];
         feb[0] = 0;

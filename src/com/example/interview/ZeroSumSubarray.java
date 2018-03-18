@@ -12,6 +12,7 @@ class ZeroSumSubarray {
 	public static void findSumZeroSubArrays(int[] arr) {
 	    Map<Integer, Integer> sumMap = new HashMap<Integer, Integer>();
 	    Integer sum = 0;
+	    
 	    for (int i = 0; i < arr.length; i++) {
 	        sum += arr[i];
 	 

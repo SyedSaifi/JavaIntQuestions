@@ -8,8 +8,6 @@ public class EvenOddThreadSequential {
 		Thread even = new Thread(new EvenThread(np),"Even Thread");
 		odd.start();
 		even.start();
-		
-		
 	}
 }
 	
@@ -48,21 +46,21 @@ public class EvenOddThreadSequential {
 	}
 	
 	class NumberPrinter{
-		private boolean iseven= true;
+		private boolean iseven= false;
 		
 		public void oddPrinter(int i) throws InterruptedException{
 			synchronized(this){
-				if(!iseven)
+				if(iseven)
 					wait();
 				System.out.println(Thread.currentThread().getName()+":: "+i);
-				iseven=false;
+				iseven=true;
 				notify();
 			}
 		}
 		
 		public void evenPrinter(int i) throws InterruptedException{
 			synchronized(this){
-				if(iseven)
+				if(!iseven)
 					wait();
 				System.out.println(Thread.currentThread().getName()+":: "+i);
 				iseven=true;

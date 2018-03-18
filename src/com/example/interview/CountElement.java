@@ -9,7 +9,6 @@ import java.util.Map;
 public class CountElement {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		List<String> list = new ArrayList<String>();
 		list.add("aaa");
 		list.add("bbb");

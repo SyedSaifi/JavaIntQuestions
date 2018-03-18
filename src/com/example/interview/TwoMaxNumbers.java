@@ -6,10 +6,10 @@ public class TwoMaxNumbers {
         int maxOne = 0;
         int maxTwo = 0;
         for(int n:nums){
-            if(maxOne < n){
+            if(n > maxOne){
                 maxTwo = maxOne;
                 maxOne =n;
-            } else if(maxTwo < n){
+            } else if(n > maxTwo){
                 maxTwo = n;
             }
         }

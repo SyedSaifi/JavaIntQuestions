@@ -10,7 +10,6 @@ public class MagicPair {
 		int[] arr = {4, 3, 6, 6, 7, 5, 8};
 		//getPair(arr, 10);
 		printPairsUsingSet(arr, 10);
-		//printPairsUsingTwoPointers(arr,10);
 	}
 	
 	public static void getPair(int[] arr, int n){

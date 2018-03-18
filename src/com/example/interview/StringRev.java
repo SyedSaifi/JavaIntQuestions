@@ -2,7 +2,7 @@ package com.example.interview;
 
 public class StringRev {
 	public static void main(String[] args) {
-		String str = "hello my name is";
+		String str = "hello my name is talib";
         String str1="";
         int count =0;
         String[] reverse = new String[10];
