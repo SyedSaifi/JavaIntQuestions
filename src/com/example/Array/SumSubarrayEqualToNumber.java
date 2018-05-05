@@ -1,4 +1,4 @@
-package com.example.interview;
+package com.example.Array;
 
 public class SumSubarrayEqualToNumber {
 	public static void main(String arg[]) {

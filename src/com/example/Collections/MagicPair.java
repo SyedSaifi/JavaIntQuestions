@@ -1,4 +1,4 @@
-package com.example.Array;
+package com.example.Collections;
 
 import java.util.Arrays;
 import java.util.HashSet;
