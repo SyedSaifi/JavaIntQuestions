@@ -1,6 +1,6 @@
 package com.example.Collections;
 
-import java.util.LinkedHashMap;
+import java.util.HashMap;
 import java.util.Map;
 
 public class LongestSubstringWithoutRepeat 
@@ -12,7 +12,7 @@ public class LongestSubstringWithoutRepeat
         String longestSubstring = null;
         int longestSubstringLength = 0;
          
-        Map<Character, Integer> charPosMap = new LinkedHashMap<Character, Integer>();
+        Map<Character, Integer> charPosMap = new HashMap<>();
          
         for (int i = 0; i < charArray.length; i++) 
         {

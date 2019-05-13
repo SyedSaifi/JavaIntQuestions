@@ -27,7 +27,7 @@ public class Pangram {
 	public static void main(String[] args) {
 		String str = "The quick brown fox jumps over the lazy dog";
 
-		if (checkPangram(str) == true)
+		if (checkPangram(str))
 			System.out.print(str + " is a pangram.");
 		else
 			System.out.print(str + " is not a pangram.");

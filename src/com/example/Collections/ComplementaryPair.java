@@ -16,15 +16,15 @@ public class ComplementaryPair {
 	public static int NoOfPairs(int[] arr, int sum) {
 		Map<Integer,Integer> map = new HashMap<>();
 		
-		for(int i: arr) {
-			map.put(i, map.containsKey(i) ? map.get(i)+1 : 1);
+		for(int number: arr) {
+			map.put(number, map.containsKey(number) ? map.get(number)+1 : 1);
 		}
 		
 		int noOfPairs = 0;
-		for(int i : map.keySet()) {
-			int target = sum -i;
+		for(int number : map.keySet()) {
+			int target = sum - number;
 			if(map.containsKey(target)) {
-				int c1 = map.get(i);
+				int c1 = map.get(number);
 				int c2 = map.get(target);
 				noOfPairs+=c1*c2;
 			}
@@ -34,9 +34,9 @@ public class ComplementaryPair {
 	
 	public static void Pairs(int[] arr, int sum) {
 		Map<Integer,Integer> map = new HashMap<>();
-		
-		for(int i: arr) {
-			map.put(i, map.containsKey(i) ? map.get(i)+1 : 1);
+
+		for(int number: arr) {
+			map.put(number, map.containsKey(number) ? map.get(number)+1 : 1);
 		}
 		
 		for(int num : map.keySet()) {

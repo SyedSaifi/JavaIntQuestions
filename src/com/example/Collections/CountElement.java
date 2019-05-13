@@ -17,8 +17,7 @@ public class CountElement {
 		Map<String, Integer> wordCount = new HashMap<String, Integer>();
 
 		for(String word: list) {
-		  Integer count = wordCount.get(word);  
-		  wordCount.put(word, (count==null) ? 1 : count+1);
+		  wordCount.put(word, wordCount.containsKey(word) ? wordCount.get(word)+1 : 1);
 		}
 		System.out.println("Map of occurances :: "+wordCount);
 	}
