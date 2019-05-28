@@ -9,6 +9,7 @@ public class ArrayCircularLeftShift {
 	    int[] array1 = {1,2,3,4,5,6,7,8};
 	    leftShift(array, 3);
 	    rightShift(array1,3);
+
 	    System.out.println(Arrays.toString(array));
 	    System.out.println(Arrays.toString(array1));
 	}
