@@ -11,6 +11,7 @@ public class ArrayCircularLeftShift {
 	    rightShift(array1,3);
 
 	    System.out.println(Arrays.toString(array));
+
 	    System.out.println(Arrays.toString(array1));
 	}
 
